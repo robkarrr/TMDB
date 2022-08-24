@@ -6,6 +6,9 @@ import Navigation from './components/Nav'
 import PopularPage from './pages/PopularPage'
 import LatestPage from './pages/LatestPage'
 import TopPage from './pages/TopPage'
+import { ReactQueryDevtools } from 'react-query/devtools'
+
+
 function App() {
   return (
     <div id="App">
@@ -18,6 +21,8 @@ function App() {
             <Route path="/top" element={<TopPage/>}/>
             <Route path="*" element={<NotFoundPage/>}/>
         </Routes>
+
+        <ReactQueryDevtools/>
     </div>
   )
 }
