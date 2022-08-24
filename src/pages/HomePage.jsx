@@ -2,10 +2,11 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import tmdbAPI from '../services/tmbdAPI'
 import { useQuery } from 'react-query'
+import usePopularMovies from '../hooks/usePopularMovies'
 
 const HomePage = () => {
 
-     const {data, isSuccess, isError, error} = useQuery('popular-movies', tmdbAPI.getPopularMovies)
+     const {data, isSuccess, isError, error} = usePopularMovies()
 
     return (
         <Container>
