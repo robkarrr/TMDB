@@ -7,6 +7,7 @@ import PopularPage from './pages/PopularPage'
 import LatestPage from './pages/LatestPage'
 import TopPage from './pages/TopPage'
 import { ReactQueryDevtools } from 'react-query/devtools'
+import DiscoverPage from './pages/DiscoverPage'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
         <Routes>
             <Route path="/" element={<HomePage/>}/>
+            <Route path="/discover" element={<DiscoverPage/>}/>
             <Route path="/popular" element={<PopularPage/>}/>
             <Route path="/latest" element={<LatestPage/>}/>
             <Route path="/top" element={<TopPage/>}/>

@@ -22,8 +22,16 @@ const getTopRatedMovies = async () => {
 
     return res.data
 }
+
+const getGenres = async () => {
+    const res = await axios.get(`/genre/movie/list?api_key=${api_key}&language=en-US`)
+
+    return res.data
+}
+
 export default {
     getPopularMovies,
     getTopRatedMovies,
     getLatestMovies,
+    getGenres,
 }
