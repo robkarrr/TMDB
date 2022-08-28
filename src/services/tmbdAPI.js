@@ -12,13 +12,13 @@ const getPopularMovies = async () => {
 }
 
 const getLatestMovies = async () => {
-    const res = await axios.get(`https://api.themoviedb.org/3/movie/now_playing?api_key=${api_key}&language=en-US&page=1`)
+    const res = await axios.get(`movie/now_playing?api_key=${api_key}&language=en-US&page=1`)
 
     return res.data
 }
 
 const getTopRatedMovies = async () => {
-    const res = await axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${api_key}&language=en-US&page=1`)
+    const res = await axios.get(`movie/top_rated?api_key=${api_key}&language=en-US&page=1`)
 
     return res.data
 }
@@ -29,9 +29,16 @@ const getGenres = async () => {
     return res.data
 }
 
+const getMovieByGenre = async (genre, page) => {
+    const res = await axios.get(`/discover/movie?api_key=${api_key}&with_genres=${genre}&page=${page}`)
+
+    return res.data
+}
+
 export default {
     getPopularMovies,
     getTopRatedMovies,
     getLatestMovies,
     getGenres,
+    getMovieByGenre,
 }
