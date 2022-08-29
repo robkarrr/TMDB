@@ -14,7 +14,7 @@ const MovieInfoPage = () => {
         <Container className="py-3">
             {isError && <h1>Something went wrong {error.message}</h1>}
 
-            {isLoading && <h1>Loading details...</h1>}
+            {isLoading && <h1>Loading Details...</h1>}
 
             {isSuccess && <MovieInfo movie={data}/>}
         </Container>
