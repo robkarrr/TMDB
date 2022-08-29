@@ -41,6 +41,12 @@ const getSingleMovie = async (id) => {
     return res.data
 }
 
+const getActor = async (id) => {
+    const res = await axios.get(`/person/${id}?api_key=${api_key}&language=en-US&append_to_response=movie_credits`)
+
+    return res.data
+}
+
 export default {
     getPopularMovies,
     getTopRatedMovies,
@@ -48,4 +54,5 @@ export default {
     getGenres,
     getMovieByGenre,
     getSingleMovie,
+    getActor,
 }
