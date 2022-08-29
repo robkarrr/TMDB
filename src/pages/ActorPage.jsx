@@ -12,17 +12,17 @@ const ActorPage = () => {
     const {data, isSuccess, isLoading, isError, error} = useGetActors(id)
 
 
-  return (
-      <Container>
-          {isError && <h1>Something Went wrong... {error.message}</h1>}
+    return (
+        <Container>
+            {isError && <h1>Something Went wrong... {error.message}</h1>}
 
-          {isLoading && <h2>Loading Actor Detalis...</h2>}
+            {isLoading && <h2>Loading Actor Detalis...</h2>}
 
-          {isSuccess && (
-              <ActorInfo actor={data}/>
-          )}
-      </Container>
-  )
+            {isSuccess && (
+                <ActorInfo actor={data}/>
+            )}
+        </Container>
+    )
 }
 
 export default ActorPage
