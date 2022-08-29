@@ -48,7 +48,7 @@ const ActorInfo = ({ actor }) => {
                     <tbody>
                         {actor.movie_credits.cast.map((movie) => (
                             <tr key={movie.id}>
-                                <td><a href={`/movie/${movie.id}`}>{movie.title}</a></td>
+                                <td><Button variant="dark" as={Link} to={`/movie/${movie.id}`}>{movie.title}</Button></td>
                                 <td>{movie.character}</td>
                             </tr>
                         ))}
