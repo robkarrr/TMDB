@@ -19,7 +19,9 @@ const ActorInfo = ({ actor }) => {
         <Row>
             <Col>
                 <Card>
-                    <Card.Img variant="top" src={img_prefix + actor.profile_path}/>
+                    {actor.profile_path && 
+                        <Card.Img variant="top" src={img_prefix + actor.profile_path}/>
+                    }
                 </Card>
                 {actor.hompage && 
                   <Card.Link className="mt-2" as={Button} variant="dark" href={actor.homepage}>Visit Website</Card.Link>

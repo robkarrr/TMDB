@@ -9,7 +9,9 @@ const img_prefix = 'https://image.tmdb.org/t/p/w500'
 const MovieCard = ({movie}) => {
   return (
     <Card className="mb-4">
-        <Card.Img className="img-fluid" variant="top" src={img_prefix+movie.poster_path}/>
+        {movie.poster_path &&
+          <Card.Img className="img-fluid" variant="top" src={img_prefix+movie.poster_path}/>
+        } 
         <Card.Body>
             <Card.Title>{movie.title}</Card.Title>
             <Card.Text>Release Date: {movie.release_date}</Card.Text>

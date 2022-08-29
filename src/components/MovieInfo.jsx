@@ -19,9 +19,13 @@ const MovieInfo = ({ movie }) => {
             <Row>
                 <Col>
                     <Card>
-                        <Card.Img variant="top" src={img_prefix + movie.poster_path}/>
+                        {movie.poster_path &&
+                            <Card.Img className="img-fluid" variant="top" src={img_prefix+movie.poster_path}/>
+                        } 
                     </Card>
-                    <Card.Link className="mt-2" as={Button} variant="dark" href={movie.homepage}>Visit Webiste</Card.Link>
+                    {movie.homepage && 
+                        <Card.Link className="mt-2" as={Button} variant="dark" href={movie.homepage}>Visit Webiste</Card.Link>
+                    }
                 </Col>
 
                 <Col>
