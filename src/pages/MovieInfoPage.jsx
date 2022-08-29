@@ -1,8 +1,9 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container'
 import useGetSingelMovie from '../hooks/useGetSingleMovie'
 import { useParams } from 'react-router-dom'
 import MovieInfo from '../components/MovieInfo'
+import Container from 'react-bootstrap/Container'
+
 const MovieInfoPage = () => {
 
     const { id } = useParams()

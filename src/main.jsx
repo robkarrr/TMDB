@@ -7,7 +7,7 @@ import App from './App'
 const queryClient = new QueryClient({
     defaultOptions:{
         queries:{
-            refetchOnWindowFocus:false,
+            refetchOnWindowFocus:false, //disables refetch everytime you focus the window
         },
     },   
 })

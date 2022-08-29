@@ -1,7 +1,9 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container'
 import useTopMovies from '../hooks/useTopMovies'
 import MovieCard from '../components/MovieCard'
+
+//bootstrap imports
+import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 

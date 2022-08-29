@@ -1,9 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
 import './assets/App.scss'
 import { ReactQueryDevtools } from 'react-query/devtools'
+import Navigation from './components/Nav'
+
+//pages
 import HomePage from './pages/HomePage'
 import NotFoundPage from './pages/NotFoundPage'
-import Navigation from './components/Nav'
 import PopularPage from './pages/PopularPage'
 import LatestPage from './pages/LatestPage'
 import TopPage from './pages/TopPage'

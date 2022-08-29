@@ -1,9 +1,11 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container'
 import useMovieByGenre from '../hooks/useMovieByGenre'
 import {useParams, useSearchParams} from 'react-router-dom'
 import MovieCard from '../components/MovieCard'
 import Pagination from '../components/Pagination'
+
+//bootstrap imports
+import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 

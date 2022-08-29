@@ -1,4 +1,8 @@
+// PAGINATION COMPONENT
+
 import React from 'react'
+
+//bootstrap imports
 import Button from 'react-bootstrap/Button'
 
 const Pagination = ({page, totPages, onChangePage}) => {

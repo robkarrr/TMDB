@@ -1,9 +1,13 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container'
+import MovieCard from '../components/MovieCard'
 import usePopularMovies from '../hooks/usePopularMovies'
+
+//bootstrap imports
+import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import MovieCard from '../components/MovieCard'
+
+
 const PopularPage = () => {
 
      const {data, isSuccess, isLoading, isError, error} = usePopularMovies()

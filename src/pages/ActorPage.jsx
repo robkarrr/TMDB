@@ -1,8 +1,9 @@
 import React from 'react'
 import useGetActors from '../hooks/useGetActor'
 import {useParams} from 'react-router-dom'
-import Container from 'react-bootstrap/Container'
 import ActorInfo from '../components/ActorInfo'
+
+import Container from 'react-bootstrap/Container'
 
 
 const ActorPage = () => {

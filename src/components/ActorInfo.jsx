@@ -1,4 +1,9 @@
+// ACTOR DETAILS COMPONENT //
+
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+//bootstrap imports
 import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card'
 import ListGroup from 'react-bootstrap/ListGroup'
@@ -6,7 +11,6 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Table from 'react-bootstrap/Table'
 import Button from 'react-bootstrap/Button'
-import { Link } from 'react-router-dom'
 
 const ActorInfo = ({ actor }) => {
 

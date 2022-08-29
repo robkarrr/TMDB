@@ -1,7 +1,11 @@
+// NAVIGATION COMPONENT
+
+import { Link, NavLink } from 'react-router-dom'
+
+//bootstrap imports
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import { Link, NavLink } from 'react-router-dom'
 
 const Navigation = () => {
 	return (

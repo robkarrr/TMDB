@@ -1,7 +1,11 @@
+// MOVIE DISPLAY CARD COMPONENT
+
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+//boostrap imports
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { Link } from 'react-router-dom'
 
 
 const img_prefix = 'https://image.tmdb.org/t/p/w500'

@@ -1,11 +1,15 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container'
 import useGetGenres from '../hooks/useGetGenres'
-import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
+
+//bootstrap imports
+import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 
+
+// PAGE FOR ALL THE GENRES
 
 const DiscoverPage = () => {
     const {data, isSuccess, isLoading, isError, error} = useGetGenres()
