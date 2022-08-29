@@ -11,6 +11,11 @@ const DiscoverPage = () => {
 
     return (
         <Container>
+
+            {isError && <h1>Something went wrong... {error.message}</h1>}
+
+            {isLoading && <div>Loading Genres...</div>}
+
             <h1>Discover differnet genres</h1>
 
             <div>

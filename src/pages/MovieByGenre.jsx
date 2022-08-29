@@ -18,13 +18,13 @@ const MovieByGenre = () => {
 
 return (
     <Container className="py-3">
-        <h1>Genre Movies</h1>
         {isLoading && <h1>Loading movies</h1>}
 
         {isError && error.message}
 
         {isSuccess && (
             <>
+                <h1>Genre Movies</h1>
                 <Row>
                     {data.results.map((movie,id) =>(
                         <Col key={id} lg={3} md={4} sm={6}>

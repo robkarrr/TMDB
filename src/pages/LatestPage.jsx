@@ -6,10 +6,15 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 const LatestPage = () => {
 
-     const {data, isSuccess, isError, error} = useLatestMovies()
+     const {data, isSuccess, isLoading, isError, error} = useLatestMovies()
 
     return (
         <Container className="py-3">
+
+            {isError && <h1>Something went wrong... {error.message}</h1>}
+
+            {isLoading && <div>Loading Genres...</div>}
+
             <div>
                 <h2>Latest Movies</h2>
                 <Row>
