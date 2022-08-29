@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button'
 
 const Pagination = ({page, totPages, onChangePage}) => {
   return (
-      <div className="d-flex align-items-center justify-content-center">
+      <div className="d-flex align-items-center justify-content-between">
           
           <Button 
             variant='dark'

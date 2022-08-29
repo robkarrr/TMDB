@@ -9,6 +9,7 @@ import LatestPage from './pages/LatestPage'
 import TopPage from './pages/TopPage'
 import DiscoverPage from './pages/DiscoverPage'
 import MovieByGenre from './pages/MovieByGenre'
+import MovieInfoPage from './pages/MovieInfoPage'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<HomePage/>}/>
             <Route path="/discover" element={<DiscoverPage/>}/>
             <Route path="/discover/:id" element={<MovieByGenre/>}/>
+            <Route path="/movie/:id" element={<MovieInfoPage/>}/>
             <Route path="/popular" element={<PopularPage/>}/>
             <Route path="/latest" element={<LatestPage/>}/>
             <Route path="/top" element={<TopPage/>}/>

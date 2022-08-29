@@ -35,10 +35,17 @@ const getMovieByGenre = async (genre, page) => {
     return res.data
 }
 
+const getSingleMovie = async (id) => {
+    const res = await axios.get(`movie/${id}?api_key=${api_key}&language=en-US&append_to_response=credits`)
+
+    return res.data
+}
+
 export default {
     getPopularMovies,
     getTopRatedMovies,
     getLatestMovies,
     getGenres,
     getMovieByGenre,
+    getSingleMovie,
 }

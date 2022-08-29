@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom'
+
 
 const img_prefix = 'https://image.tmdb.org/t/p/w500'
 
@@ -13,7 +15,7 @@ const MovieCard = ({movie}) => {
             <Card.Text>Release Date: {movie.release_date}</Card.Text>
             <Card.Text>Rating: {movie.vote_average} / 10</Card.Text>
             <Card.Text></Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button variant="primary" as={Link} to={`/movie/${movie.id}`}>More Info</Button>
         </Card.Body>
     </Card>   
   )
