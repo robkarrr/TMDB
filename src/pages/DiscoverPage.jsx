@@ -3,7 +3,8 @@ import Container from 'react-bootstrap/Container'
 import useGetGenres from '../hooks/useGetGenres'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
-
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
 
 
 const DiscoverPage = () => {
@@ -16,15 +17,19 @@ const DiscoverPage = () => {
 
             {isLoading && <div>Loading Genres...</div>}
 
-            <h1>Discover differnet genres</h1>
+            {isSuccess && (
+                <>
+                    <h1>Discover Different Genres</h1>
 
-            <div>
-                <ul>
-                    {isSuccess && data.genres.map((genre, _key) => (
-                        <li className="py-3" key={genre.id}><Button as={Link} to={`/discover/${genre.id}`} variant='dark'>{genre.name}</Button></li>
-                    ))}
-                </ul>
-            </div>
+                    <Row>
+                        {data.genres.map((genre) => (
+                            <Col key={genre.id} className="py-2" lg={3} md={4} sm={6}>
+                                <Button variant="dark" as={ Link } to={`/discover/${genre.id}`}>{genre.name}</Button>
+                            </Col>
+                        ))}
+                    </Row>
+                </>
+            )}
         </Container>
     )
 }
