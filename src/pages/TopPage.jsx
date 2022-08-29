@@ -25,7 +25,7 @@ return (
         )}
 
         <div>
-            <h2>Latest Movies</h2>
+            <h2>Top Rated Movies</h2>
             <Row>
                 {isSuccess && data.results.map((movie,id) => (
                     <Col lg={3} md={4} sm={6}>
